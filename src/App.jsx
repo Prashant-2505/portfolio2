@@ -310,7 +310,7 @@ function App() {
                       Link
                     </a>
 
-                    <a href={proj.git} target="_blank" rel="noopener noreferrer" className='bg-black text-white px-8 py-2 rounded-md flex justify-center items-center'>
+                    <a href={proj.gitLink} target="_blank" rel="noopener noreferrer" className='bg-black text-white px-8 py-2 rounded-md flex justify-center items-center'>
                       <FaGithub className='text-[2rem]' />
                     </a>
                   </div>
