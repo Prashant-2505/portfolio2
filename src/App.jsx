@@ -12,6 +12,8 @@ import express from './assets/express.png'
 import firebase from './assets/firebase.png'
 import sql from './assets/sql.png'
 import mongo from './assets/mongo.png'
+import html from './assets/html.webp'
+import  css from './assets/css.jpeg'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer';
 import Education from './components/Education';
@@ -210,33 +212,33 @@ function App() {
 
             <div className='bg-white grid grid-cols-2 justify-between gap-10  items-center p-10 rounded-xl flex-wrap sm:flex-nowrap'>
 
-              <div className="flex  justify-center items-center gap-15px">
-                <img className='w-[3rem]' src={cpp} alt="" />
-                <p className=' font-semibold'>HTML/</p>
+              <div className="flex  justify-center items-center gap-[20px] sm:gap-[15px]">
+                <img className='w-[2rem] sm:w-[3rem]' src={html} alt="" />
+                <p className=' font-semibold'>HTML</p>
               </div>
               <div className="flex justify-center items-center gap-15px">
-                <img className='w-[3rem]' src={js} alt="" />
+                <img className='w-[2rem] sm:w-[3rem]' src={css} alt="" />
                 <p className=' font-semibold'>CSS</p>
               </div>
               <div className="flex justify-center items-center gap-15px">
-                <img className='w-[3rem]' src={js} alt="" />
+                <img className='w-[2rem] sm:w-[3rem]' src={js} alt="" />
                 <p className=' font-semibold'>Javascript</p>
               </div>
 
               <div className="flex justify-center items-center gap-15px">
-                <img className='w-[3rem]' src={react} alt="" />
+                <img className='w-[2rem] sm:w-[3rem]' src={react} alt="" />
                 <p className=' font-semibold'>React js</p>
               </div>
               <div className="flex justify-center items-center gap-15px">
-                <img className='w-[3rem]' src={next} alt="" />
+                <img className='w-[2rem] sm:w-[3rem]' src={next} alt="" />
                 <p className=' font-semibold'>Next js</p>
               </div>
               <div className="flex justify-center items-center gap-15px">
-                <img className='w-[3rem]' src={bootstrap} alt="" />
+                <img className='w-[2rem] sm:w-[3rem]' src={bootstrap} alt="" />
                 <p className=' font-semibold'>Bootstrap </p>
               </div>
               <div className="flex justify-center items-center gap-15px">
-                <img className='w-[3rem]' src={tailwind} alt="" />
+                <img className='w-[2rem] sm:w-[3rem]' src={tailwind} alt="" />
                 <p className=' font-semibold'>Tailwind css</p>
               </div>
 
@@ -297,7 +299,7 @@ function App() {
                 animate={project1InView ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.4, delay: 0.3 * index + 0.9 }}
                 key={index}
-                className='border-2 p-5 rounded-lg shadow-xl'
+                className='border-2 pb-3 rounded-lg shadow-xl sm:p-5'
               >
                 <img className='' src={proj.image} alt={proj.name} />
                 <div className='X'>
