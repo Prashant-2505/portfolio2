@@ -187,15 +187,15 @@ function App() {
 
             <h1 className=' bg-white inline-block mb-3 px-4 py-4 rounded-full'>Programming Languages</h1>
 
-            <div className='bg-white flex justify-between p-10 rounded-xl sm:justify-around'>
-              <div className="flex justify-center items-center ">
-                <img className=' w-[3rem] '
+            <div className='bg-white grid grid-cols-2 justify-between gap-10  items-center p-10 rounded-xl  '>
+              <div className="flex  justify-center items-center  ">
+                <img className=' w-[2rem] sm:[3rem] '
                   src={cpp} alt="" />
                 <p
                   className=' font-semibold'>c++</p>
               </div>
               <div className="flex justify-center items-center ">
-                <img className=' w-[3rem] '
+                <img className=' w-[2rem] sm:w-[3rem] '
                   src={js} alt="" />
                 <p
                   className=' font-semibold'>javascript</p>
@@ -210,7 +210,7 @@ function App() {
             className="">
             <h1 className=' bg-white inline-block mb-3 px-4 py-4 rounded-full mt-5'>Frontend Technology</h1>
 
-            <div className='bg-white grid grid-cols-2 justify-between gap-10  items-center p-10 rounded-xl flex-wrap sm:flex-nowrap'>
+            <div className='bg-white grid grid-cols-2 justify-between gap-10  items-center p-10 rounded-xl flex-wrap '>
 
               <div className="flex  justify-center items-center gap-[20px] sm:gap-[15px]">
                 <img className='w-[2rem] sm:w-[3rem]' src={html} alt="" />
