@@ -72,8 +72,8 @@ function App() {
       <Navbar
         scrollToSection={scrollToSection}
       />
-      <div style={{ backgroundImage: 'linear-gradient(to bottom, #ff7675, #ff9573, #ffb37b, #ffd08c, #ffeaa7)' }}
-        className='h-screen w-screen overflow-scroll '
+      <div 
+        className='h-screen w-screen overflow-scroll bg-[#f7f1e3]'
       >
         {/* home div */}
         <div
@@ -96,7 +96,7 @@ function App() {
 
               className=' flex gap-[20px]'
             >
-              <a className='px-3 py-2 bg-white text-[#ff7675] text-[1.2rem] rounded-3xl hover:bg-[#ff7675] hover:text-white duration-150 ease-linear flex gap-[10px] items-center sm:px-10 sm:py-4 sm:text-[1.7rem]'
+              <a className='px-2 py-1 bg-white text-[#ff7675] text-[1.1rem] rounded-3xl hover:bg-[#ff7675] hover:text-white duration-150 ease-linear flex gap-[10px] items-center sm:px-10 sm:py-4 sm:text-[1.7rem]'
                 download={resume}
                 target={'_blank'}
                 href={resume}
@@ -172,18 +172,19 @@ function App() {
 
         {/* skill div */}
         <div
-          className='skill text-center mt-12 p-6 sm:p-20' ref={skillRef}>
+          className='skill  text-center mt-12 p-6 sm:p-20' ref={skillRef}>
           <motion.h1
             initial={{ opacity: 0, x: -150 }}
             animate={skillInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.4, delay: 0.5 }}
             className='text-center text-[2rem] font-semibold border-b-2 inline-block mb-16'>Skills</motion.h1>
 
-          <motion.div
+         <div className="flex gap-10 items-center justify-between">
+         <motion.div
             initial={{ opacity: 0, x: -150 }}
             animate={skillInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.4, delay: 0.6 }}
-            className="">
+            className=" ">
 
             <h1 className=' bg-white inline-block mb-3 px-4 py-4 rounded-full'>Programming Languages</h1>
 
@@ -210,7 +211,7 @@ function App() {
             className="">
             <h1 className=' bg-white inline-block mb-3 px-4 py-4 rounded-full mt-5'>Frontend Technology</h1>
 
-            <div className='bg-white grid grid-cols-2 justify-between gap-10  items-center p-10 rounded-xl flex-wrap '>
+            <div className='bg-white grid grid-cols-2 justify-between gap-14  items-center p-10 rounded-xl flex-wrap '>
 
               <div className="flex  justify-center items-center gap-[20px] sm:gap-[15px]">
                 <img className='w-[2rem] sm:w-[3rem]' src={html} alt="" />
@@ -252,7 +253,7 @@ function App() {
             className="">
             <h1 className=' bg-white inline-block mb-3 px-4 py-4 rounded-full mt-5'>Backend Technology</h1>
 
-            <div className='bg-white grid grid-cols-2 justify-around gap-10 p-10 rounded-xl'>
+            <div className='bg-white grid grid-cols-2 justify-around gap-14 p-10 rounded-xl'>
 
               <div className="flex justify-center items-center gap-15px">
                 <img className='h-[3rem]' src={express} alt="" />
@@ -277,6 +278,7 @@ function App() {
 
             </div>
           </motion.div>
+         </div>
 
         </div>
 
@@ -333,7 +335,7 @@ function App() {
             Contact
           </motion.h1>
 
-          <div className="bg-black h-[10rem] w-full flex justify-around items-center">
+          <div className="bg-gray-100 h-[10rem] w-full flex justify-around items-center">
             <a
               href="https://www.linkedin.com/in/prashant-sharma-ab9b0a209/"
               target="_blank"
