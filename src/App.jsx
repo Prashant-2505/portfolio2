@@ -97,7 +97,7 @@ function App() {
               className=' flex gap-[20px]'
             >
               <a className='px-2 py-1 bg-white text-[#ff7675] text-[1.1rem] rounded-3xl hover:bg-[#ff7675] hover:text-white duration-150 ease-linear flex gap-[10px] items-center sm:px-10 sm:py-4 sm:text-[1.7rem]'
-                download={resume}
+                download={true}
                 target={'_blank'}
                 href={resume}
               >Resume   <BsFillArrowDownCircleFill />
