@@ -179,7 +179,7 @@ function App() {
             transition={{ duration: 0.4, delay: 0.5 }}
             className='text-center text-[2rem] font-semibold border-b-2 inline-block mb-16'>Skills</motion.h1>
 
-         <div className="flex gap-10 items-center justify-between">
+         <div className=" gap-10 items-center justify-between">
          <motion.div
             initial={{ opacity: 0, x: -150 }}
             animate={skillInView ? { opacity: 1, x: 0 } : {}}
